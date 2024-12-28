@@ -27,7 +27,7 @@ function Hero() {
         className="flex flex-col items-center text-center gap-2"
       >
         <p className="text-lg md:text-2xl">Hello,</p>
-        <p className="text-lg md:text-2xl">I'm Mohammad Aghaei</p>
+        <p className="text-lg md:text-2xl">I&#39;m Mohammad Aghaei</p>
         <p className="text-xl md:text-3xl font-bold">A Front-End Developer</p>
 
         {/* Social Links */}

@@ -44,7 +44,7 @@ function AboutMe() {
             and Unreal Engine, eventually working as a game designer at a game
             studio for 1.5 years. In 2023, I decided to shift my focus to
             front-end development, where I combine my background in design and
-            coding to create intuitive and engaging web experiences. I'm
+            coding to create intuitive and engaging web experiences. I&#39;m
             currently working at Bytepute as a junior front-end developer.
           </p>
         </div>
