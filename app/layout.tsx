@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/next';
+// import { Analytics } from '@vercel/analytics/next';
 
 
 
@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-roboto text-mainText overflow-x-hidden`}
     >
     {children}
-    <Analytics />
+    {/*<Analytics />*/}
     <link
         href="https://unpkg.com/aos@2.3.1/dist/aos.css"
         rel="stylesheet"
