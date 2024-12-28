@@ -1,3 +1,4 @@
+'use client'
 import { FaGithub, FaTelegram } from "react-icons/fa";
 
 function Hero() {
@@ -9,7 +10,7 @@ function Hero() {
   };
 
   return (
-    <div className="dark:bg-darkModeBlack dark:text-white h-screen w-full flex flex-col-reverse md:flex-row items-center justify-center gap-10 md:gap-20  md:px-32 sm:px-10 md:px-40 bg-gray-100">
+    <div className="dark:bg-darkModeBlack dark:text-white h-screen w-full flex flex-col-reverse md:flex-row items-center justify-center gap-10 md:gap-20  sm:px-10 md:px-40 bg-gray-100">
       {/* Left Section - Image */}
       <div data-aos-duration="1000" data-aos="fade-right" className="rounded">
         <img
