@@ -3,13 +3,18 @@ import { useEffect, useState } from "react";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const [isDarkMode, setIsDarkMode] = useState(() => {
     // Retrieve theme from localStorage or fallback to checking the DOM
-    return (
-      localStorage.getItem("theme") === "dark" ||
-      document.documentElement.classList.contains("dark")
-    );
+    if (typeof window !== 'undefined') {
+      return (
+        localStorage.getItem("theme") === "dark" ||
+        document.documentElement.classList.contains("dark")
+    );} else {
+      return false;
+    }
   });
+
 
   useEffect(() => {
     if (isDarkMode) {
