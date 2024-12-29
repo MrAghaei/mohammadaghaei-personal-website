@@ -1,20 +1,17 @@
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto_Flex } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
 
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const robotoFont = Roboto_Flex({
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Mohammad Aghaei",
@@ -32,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className="">
 
     <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-roboto text-mainText overflow-x-hidden`}
+        className={`${robotoFont.className} antialiased text-mainText overflow-x-hidden`}
     >
     {children}
     <Analytics />
