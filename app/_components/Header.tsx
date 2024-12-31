@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 
 function Header() {
@@ -6,15 +6,15 @@ function Header() {
 
   const [isDarkMode, setIsDarkMode] = useState(() => {
     // Retrieve theme from localStorage or fallback to checking the DOM
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       return (
         localStorage.getItem("theme") === "dark" ||
         document.documentElement.classList.contains("dark")
-    );} else {
+      );
+    } else {
       return false;
     }
   });
-
 
   useEffect(() => {
     if (isDarkMode) {
@@ -58,6 +58,10 @@ function Header() {
 
         {/* Navigation Links (Hidden on small screens) */}
         <div className=" items-center hidden md:flex gap-8 text-lg md:text-2xl">
+          <button className="hover:bg-gray-200 rounded px-3 py-2 duration-300">
+            My Blog
+          </button>
+
           {["about-me", "experiences", "skills", "projects", "contact-me"].map(
             (section) => (
               <button
@@ -72,6 +76,7 @@ function Header() {
               </button>
             ),
           )}
+
           <button
             onClick={toggleDarkMode}
             className="relative inline-flex items-center justify-between bg-gray-200 dark:bg-gray-600 rounded-full w-20 h-10 p-1 transition-all duration-300 ease-in-out sm:w-16 sm:h-8"
