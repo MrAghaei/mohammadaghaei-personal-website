@@ -11,12 +11,20 @@ async function BlogPostCard() {
   }
   console.log(blogPosts);
   return (
-    <div>
+    <div className="flex flex-col gap-5 items-center mt-20 ">
       {blogPosts.map((blogPost) => (
-        <div key={blogPost.id}>
-          <h2>test</h2>
-          <h3>{blogPost.title}</h3>
-          <Link href={`/blog/${blogPost.id}`}>OPEN blog</Link>
+        <div
+          dir="rtl"
+          className="flex flex-col gap-5 bg-gray-100 rounded-2xl size-1/3 p-5 dark:bg-black"
+          key={blogPost.id}
+        >
+          <h3 className="text-2xl">{blogPost.title}</h3>
+          <Link
+            className="text-xl bg-blue-950 w-fit px-5 py-2 rounded-2xl text-white"
+            href={`/blog/${blogPost.id}`}
+          >
+            خواندن...
+          </Link>
         </div>
       ))}
     </div>
