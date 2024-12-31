@@ -1,14 +1,14 @@
 import { supabase } from "@/app/_lib/supabase";
 
-// interface PageProps {
-//   params: {
-//     blogId: string;
-//   };
-// }
-export type Params = Promise<{ blogId: string[] }>;
-async function Page({ params }: { params: Params }) {
+interface ParamsInputView {
+  blogId: string;
+}
+export type ParamsInputPromise = { params: Promise<ParamsInputView> };
+
+async function Page({ params }: ParamsInputPromise) {
   const { blogId } = await params;
 
+  console.log({ blogId });
   const { data, error } = await supabase
     .from("blog_posts") // No need to pass the row type here
     .select("id, title, content")
