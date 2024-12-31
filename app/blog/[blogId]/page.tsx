@@ -1,16 +1,16 @@
 import { supabase } from "@/app/_lib/supabase";
 
-interface BlogPostPage {
-  id: string;
-  title: string;
-  content: string;
-}
-
-async function Page({ params }: { params: { blogId: string } }) {
-  const blogId = params.blogId;
+// interface PageProps {
+//   params: {
+//     blogId: string;
+//   };
+// }
+export type Params = Promise<{ blogId: string[] }>;
+async function Page({ params }: { params: Params }) {
+  const { blogId } = await params;
 
   const { data, error } = await supabase
-    .from<BlogPostPage>("blog_posts")
+    .from("blog_posts") // No need to pass the row type here
     .select("id, title, content")
     .eq("id", blogId)
     .single();
