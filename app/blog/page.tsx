@@ -1,9 +1,11 @@
 import BlogHeader from "@/app/_components/BlogHeader";
+import BlogPostCard from "@/app/_components/BlogPostCard";
 
 function Page() {
   return (
-    <div className="bg-white h-screen mx-auto">
+    <div className="dark:bg-darkModeBlack dark:text-white bg-white h-screen mx-auto">
       <BlogHeader />
+      <BlogPostCard />
     </div>
   );
 }
