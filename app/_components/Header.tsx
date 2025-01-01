@@ -66,7 +66,7 @@ function Header() {
         <div className=" items-center hidden md:flex gap-8 text-lg md:text-2xl">
           <Link
             href="/blog"
-            className="hover:bg-gray-200 rounded px-3 py-2 duration-300"
+            className="hover:bg-gray-200 rounded px-3 py-2 duration-300 dark:hover:bg-gray-800"
           >
             My Blog
           </Link>
@@ -76,7 +76,7 @@ function Header() {
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
-                className="hover:bg-gray-200 rounded px-3 py-2 duration-300"
+                className="hover:bg-gray-200 rounded px-3 py-2 duration-300 dark:hover:bg-gray-800"
               >
                 {section
                   .split("-")

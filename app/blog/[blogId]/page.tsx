@@ -1,4 +1,6 @@
 import { supabase } from "@/app/_lib/supabase";
+import Link from "next/link";
+import { FaLongArrowAltLeft } from "react-icons/fa";
 
 interface ParamsInputView {
   blogId: string;
@@ -29,10 +31,22 @@ async function Page({ params }: ParamsInputPromise) {
   return (
     <div
       dir="rtl"
-      className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg"
+      className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg dark:bg-darkModeBlack dark:text-white"
     >
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">{data.title}</h1>
-      <div className="text-lg text-gray-700 leading-relaxed">
+      <div className="flex justify-end">
+        <Link
+          className="dark:hover:bg-gray-800 mb-5 flex items-center justify-center w-60 h-10 gap-2 hover:bg-gray-200 rounded px-3 duration-300"
+          href="/blog"
+        >
+          <p>Back to portfolio</p>
+          <FaLongArrowAltLeft />
+        </Link>
+      </div>
+
+      <h1 className="text-3xl font-bold text-gray-800 mb-4 dark:text-white">
+        {data.title}
+      </h1>
+      <div className="text-lg text-gray-700 leading-relaxed dark:text-white">
         {data.content}
       </div>
     </div>

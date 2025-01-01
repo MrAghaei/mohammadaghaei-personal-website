@@ -33,7 +33,7 @@ function BlogHeader() {
   return (
     <div className="px-10 text-sm py-5 flex items-center justify-between sm:px-40 xl:px-60 xl:text-xl">
       <Link
-        className="flex items-center gap-2 hover:bg-gray-200 rounded px-3 py-2 duration-300"
+        className="flex items-center gap-2 dark:hover:bg-gray-800 hover:bg-gray-200 rounded px-3 py-2 duration-300"
         href="/"
       >
         <FaLongArrowAltLeft />
