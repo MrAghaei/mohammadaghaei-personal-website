@@ -5,6 +5,7 @@ import Experiences from "@/app/_components/Experiences";
 import Skills from "@/app/_components/Skills";
 import Projects from "@/app/_components/Projects";
 import ContactMe from "@/app/_components/ContactMe";
+import BackToTopButton from "@/app/_components/BackToTopButton";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <div id="contact-me">
         <ContactMe />
       </div>
+      <BackToTopButton />
     </>
   );
 }
