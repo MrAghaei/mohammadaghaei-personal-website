@@ -31,7 +31,7 @@ function BlogHeader() {
     }
   }, [isDarkMode]);
   return (
-    <div className="px-60 py-5 flex items-center justify-between">
+    <div className="px-10 text-sm py-5 flex items-center justify-between sm:px-40 xl:px-60 xl:text-xl">
       <Link
         className="flex items-center gap-2 hover:bg-gray-200 rounded px-3 py-2 duration-300"
         href="/"
@@ -39,7 +39,9 @@ function BlogHeader() {
         <FaLongArrowAltLeft />
         Back to portfolio
       </Link>
-      <h1 className="font-bold text-xl sm:text-2xl md:text-3xl">My Blog</h1>
+      <h1 className="text-sm font-bold xl:text-xl sm:text-2xl md:text-3xl">
+        My Blog
+      </h1>
       <DarkModeToggle toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
     </div>
   );

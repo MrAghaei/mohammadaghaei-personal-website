@@ -96,6 +96,12 @@ function Header() {
       {/* Mobile Menu (Visible on small screens when toggled) */}
       {isMenuOpen && (
         <div className="mt-4 flex flex-col items-start gap-3 text-lg">
+          <Link
+            href="/blog"
+            className="hover:bg-gray-200 rounded px-3 py-2 duration-300"
+          >
+            My Blog
+          </Link>
           {["about-me", "experiences", "skills", "projects", "contact-me"].map(
             (section) => (
               <button

@@ -11,11 +11,11 @@ async function BlogPostCard() {
   }
   console.log(blogPosts);
   return (
-    <div className="flex flex-col gap-5 items-center mt-20 ">
+    <div className="flex flex-col gap-5 items-center mt-20 px-10 sm:px-20 xl:px-60">
       {blogPosts.map((blogPost) => (
         <div
           dir="rtl"
-          className="flex flex-col gap-5 bg-gray-100 rounded-2xl size-1/3 p-5 dark:bg-black"
+          className="flex flex-col gap-5 bg-gray-100 rounded-2xl size-full xl:size-1/2 p-5 dark:bg-black"
           key={blogPost.id}
         >
           <h3 className="text-2xl">{blogPost.title}</h3>
