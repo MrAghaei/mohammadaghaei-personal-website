@@ -38,7 +38,7 @@ async function Page({ params }: ParamsInputPromise) {
           className="dark:hover:bg-gray-800 mb-5 flex items-center justify-center w-60 h-10 gap-2 hover:bg-gray-200 rounded px-3 duration-300"
           href="/blog"
         >
-          <p>Back to portfolio</p>
+          <p>Back to posts</p>
           <FaLongArrowAltLeft />
         </Link>
       </div>
