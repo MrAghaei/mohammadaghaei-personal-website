@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
+import { supabase } from "@/app/(lib)/supabase";
 
 // Define the proper type for heading levels
 type Level = 1 | 2 | 3 | 4 | 5 | 6;
@@ -32,9 +33,25 @@ const BlogEditor = () => {
     const postData = {
       title,
       content: editor.getHTML(),
-      createdAt: new Date().toISOString(),
+      created_at: new Date().toISOString(),
     };
-    console.log("Post data:", postData);
+
+    try {
+      const { data, error } = await supabase
+        .from("blog_posts")
+        .insert([postData]);
+
+      if (error) {
+        console.error("Error saving blog post:", error);
+        alert("Failed to save blog post. Please try again.");
+      } else {
+        console.log("Blog post saved successfully:", data);
+        alert("Blog post saved successfully!");
+      }
+    } catch (err) {
+      console.error("Unexpected error:", err);
+      alert("An unexpected error occurred. Please try again.");
+    }
   };
 
   return (

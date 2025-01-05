@@ -12,7 +12,7 @@ async function Page({ params }: ParamsInputPromise) {
 
   console.log({ blogId });
   const { data, error } = await supabase
-    .from("blog_posts") // No need to pass the row type here
+    .from("blog_posts")
     .select("id, title, content")
     .eq("id", blogId)
     .single();
@@ -46,9 +46,10 @@ async function Page({ params }: ParamsInputPromise) {
       <h1 className="text-3xl font-bold text-gray-800 mb-4 dark:text-white">
         {data.title}
       </h1>
-      <div className="text-lg text-gray-700 leading-relaxed dark:text-white">
-        {data.content}
-      </div>
+      <div
+        className="text-lg text-gray-700 leading-relaxed dark:text-white"
+        dangerouslySetInnerHTML={{ __html: data.content }}
+      ></div>
     </div>
   );
 }
