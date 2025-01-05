@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import AOS from "aos";
-import DarkModeToggle from "@/app/_components/DarkModeToggle";
+import DarkModeToggle from "@/app/(components)/DarkModeToggle";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

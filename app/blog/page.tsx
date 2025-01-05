@@ -1,5 +1,5 @@
-import BlogHeader from "@/app/_components/BlogHeader";
-import BlogPostCard from "@/app/_components/BlogPostCard";
+import BlogHeader from "@/app/(components)/BlogHeader";
+import BlogPostCard from "@/app/(components)/BlogPostCard";
 
 function Page() {
   return (

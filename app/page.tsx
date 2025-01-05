@@ -1,11 +1,11 @@
-import Header from "@/app/_components/Header";
-import Hero from "@/app/_components/Hero";
-import AboutMe from "@/app/_components/AboutMe";
-import Experiences from "@/app/_components/Experiences";
-import Skills from "@/app/_components/Skills";
-import Projects from "@/app/_components/Projects";
-import ContactMe from "@/app/_components/ContactMe";
-import BackToTopButton from "@/app/_components/BackToTopButton";
+import Header from "@/app/(components)/Header";
+import Hero from "@/app/(components)/Hero";
+import AboutMe from "@/app/(components)/AboutMe";
+import Experiences from "@/app/(components)/Experiences";
+import Skills from "@/app/(components)/Skills";
+import Projects from "@/app/(components)/Projects";
+import ContactMe from "@/app/(components)/ContactMe";
+import BackToTopButton from "@/app/(components)/BackToTopButton";
 
 export default function Home() {
   return (
