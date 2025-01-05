@@ -11,7 +11,8 @@ This project is a modern, responsive personal website featuring a blog section, 
 - **Dynamic Blog**: A dedicated section to publish and display blog posts.
 - **Database Integration**: Blog content is fetched dynamically from a [Supabase](https://supabase.com/) database.
 - **Error Handling**: Displays meaningful messages when blog posts are unavailable.
-- **Payload CMS**: Coming soon...
+- **TipTap Editor**: TipTap editor for managing content for the blog
+- **Admin route**: Admin route with authentication
 
 ### 🌈 Interactive Features
 - **Dark Mode Toggle**: Seamless switch between light and dark themes.
