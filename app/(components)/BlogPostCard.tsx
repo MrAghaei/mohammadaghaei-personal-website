@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { supabase } from "@/app/_lib/supabase";
+import { supabase } from "@/app/(lib)/supabase";
 
 async function BlogPostCard() {
   const { data: blogPosts, error } = await supabase

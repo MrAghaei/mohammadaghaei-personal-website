@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { FaLongArrowAltLeft } from "react-icons/fa";
-import DarkModeToggle from "@/app/_components/DarkModeToggle";
+import DarkModeToggle from "@/app/(components)/DarkModeToggle";
 import { useEffect, useState } from "react";
 
 function BlogHeader() {
