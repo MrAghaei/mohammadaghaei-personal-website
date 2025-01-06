@@ -42,7 +42,7 @@ function Page() {
     setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : prevPage));
 
   return (
-    <div className="dark:bg-darkModeBlack dark:text-white bg-white h-screen mx-auto">
+    <div className="min-h-screen dark:bg-darkModeBlack dark:text-white bg-white mx-auto">
       <BlogHeader />
       <div className="max-w-4xl mx-auto p-6">
         {loading ? (
