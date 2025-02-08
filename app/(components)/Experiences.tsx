@@ -32,7 +32,7 @@ function Experiences() {
           {
             title: "Frontend Developer",
             company: "Bytepute · Full-time",
-            duration: "Aug 2024 - Present · 5 months",
+            duration: "Aug 2024 - Jan 2025 · 6 months",
           },
         ].map((experience, index) => (
           <div
