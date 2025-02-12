@@ -24,7 +24,7 @@ function Projects() {
   return (
     <div className="dark:bg-darkModeBlack dark:text-white min-h-screen flex flex-col items-center justify-center gap-10 md:gap-20 px-5 md:px-20 lg:px-40 bg-gray-100">
       <h1 className="text-3xl md:text-5xl font-bold mt-24">My Projects</h1>
-      <div className="grid grid-cols-2 gap-8 place-items-center w-3/4 mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center w-3/4 mb-24">
         <ProjectCard data={ProjectsData} />
       </div>
     </div>
