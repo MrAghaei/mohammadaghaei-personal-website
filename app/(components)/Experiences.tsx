@@ -30,9 +30,9 @@ function Experiences() {
             duration: "Apr 2024 - Oct 2024 · 7 months",
           },
           {
-            title: "Frontend Developer",
+            title: "Co-founder & Developer",
             company: "Bytepute · Full-time",
-            duration: "Aug 2024 - Jan 2025 · 6 months",
+            duration: "Aug 2024 - Present",
           },
         ].map((experience, index) => (
           <div
