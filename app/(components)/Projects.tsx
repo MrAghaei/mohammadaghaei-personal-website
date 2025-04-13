@@ -9,16 +9,22 @@ function Projects() {
       title: "KheradKhan",
     },
     {
-      image: "medium-clone",
-      link: "https://github.com/MrAghaei/medium-clone",
+      image: "7host",
+      link: "https://github.com/MrAghaei/7host-interveiw-task",
       buttonText: "Github Repo",
-      title: "Medium Mock Project",
+      title: "7Host Interview Project",
     },
     {
       image: "novindevtest",
       link: "https://github.com/MrAghaei/NovinDevTest",
       buttonText: "Github Repo",
       title: "NovinDev Interview Project",
+    },
+    {
+      image: "medium-clone",
+      link: "https://github.com/MrAghaei/medium-clone",
+      buttonText: "Github Repo",
+      title: "Medium Mock Project",
     },
   ];
   return (
