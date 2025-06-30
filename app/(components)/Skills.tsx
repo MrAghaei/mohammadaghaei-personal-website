@@ -5,21 +5,22 @@ function Skills() {
   return (
     <div
       className="dark:bg-darkModeBlack dark:text-white bg-white
-     py-20 min-h-screen flex flex-col items-center justify-center
-      gap-10 md:gap-20 px-5 md:px-20 lg:px-40 "
+      py-20 min-h-screen flex flex-col items-center justify-center
+      gap-10 md:gap-20 px-5 md:px-20 lg:px-40"
     >
       <h1 className="text-3xl md:text-5xl font-bold">My Skills</h1>
-      <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 w-full mx-auto justify-center">
+
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 w-full max-w-6xl justify-center">
         {/* Front-end Section */}
         <div
           data-aos="fade-right"
           data-aos-duration="800"
-          className="shadow-xl hover:!shadow-2xl hover:!transition-shadow
-           hover:!duration-300 flex flex-col items-center justify-center
-            gap-8 border border-blue-900 rounded-2xl p-5 md:py-5 md:px-8"
+          className="group !transition-all duration-300 transform hover:scale-[1.02] border border-blue-300 dark:border-blue-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md rounded-2xl p-6 md:py-8 md:px-10 flex flex-col items-center gap-6 w-full"
         >
-          <h2 className="text-2xl md:text-4xl text-gray-600">Front-end</h2>
-          <div className="grid grid-cols-1 px-10 xl:grid-cols-2 gap-5 md:gap-10">
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 dark:text-blue-300">
+            Front-end
+          </h2>
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 md:gap-8 w-full">
             {[
               { name: "React", level: "Intermediate" },
               { name: "Next.js", level: "Intermediate" },
@@ -31,10 +32,14 @@ function Skills() {
               { name: "SASS", level: "Intermediate" },
             ].map((skill, index) => (
               <div key={index} className="flex items-center gap-4">
-                <FaCode className="min-w-5 text-xl xl:text-2xl" />
-                <div className="flex flex-col items-start">
-                  <p className="text-lg md:text-2xl font-bold">{skill.name}</p>
-                  <p>{skill.level}</p>
+                <FaCode className="text-blue-600 dark:text-blue-400 text-xl" />
+                <div className="flex flex-col">
+                  <p className="text-base md:text-lg font-medium text-gray-800 dark:text-white">
+                    {skill.name}
+                  </p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {skill.level}
+                  </p>
                 </div>
               </div>
             ))}
@@ -44,12 +49,12 @@ function Skills() {
         {/* Other Section */}
         <div
           data-aos="fade-left"
-          className="shadow-xl hover:!shadow-2xl hover:!transition-shadow
-           hover:!duration-300 flex flex-col items-center justify-center
-            gap-8 border border-blue-900 rounded-2xl p-5 md:py-5 md:px-8"
+          className="group !transition-all !duration-300 transform hover:scale-[1.02] border border-blue-300 dark:border-blue-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md rounded-2xl p-6 md:py-8 md:px-10 flex flex-col items-center gap-6 w-full"
         >
-          <h2 className="text-2xl md:text-4xl text-gray-600">Other</h2>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 md:gap-10">
+          <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 dark:text-blue-300">
+            Other
+          </h2>
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 md:gap-8 w-full">
             {[
               { name: "Scrum", level: "Intermediate" },
               { name: "Agile Methodologies", level: "Intermediate" },
@@ -61,10 +66,14 @@ function Skills() {
               { name: "Game Design", level: "Intermediate" },
             ].map((skill, index) => (
               <div key={index} className="flex items-center gap-4">
-                <MdVerified className="min-w-5 text-xl xl:text-2xl" />
-                <div className="flex flex-col items-start">
-                  <p className="text-lg md:text-2xl font-bold">{skill.name}</p>
-                  <p>{skill.level}</p>
+                <MdVerified className="text-blue-600 dark:text-blue-400 text-xl" />
+                <div className="flex flex-col">
+                  <p className="text-base md:text-lg font-medium text-gray-800 dark:text-white">
+                    {skill.name}
+                  </p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {skill.level}
+                  </p>
                 </div>
               </div>
             ))}

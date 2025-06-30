@@ -30,9 +30,9 @@ function Experiences() {
             duration: "Apr 2024 - Oct 2024 · 7 months",
           },
           {
-            title: "Co-founder & Developer",
-            company: "Bytepute · Full-time",
-            duration: "Aug 2024 - Present",
+            title: "Front-end Learning",
+            company: "Full-time",
+            duration: "July 2023 - Present",
           },
         ].map((experience, index) => (
           <div
@@ -40,13 +40,17 @@ function Experiences() {
             data-aos="flip-down"
             data-aos-easing="ease-in-back"
             data-aos-duration="500"
-            className="shadow-xl hover:!shadow-2xl hover:!transition-shadow hover:!duration-300 flex flex-col items-start justify-center gap-2 border border-blue-900 rounded-2xl p-5"
+            className="group !transition-all !duration-300 transform hover:scale-[1.02] border border-blue-300 dark:border-blue-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md rounded-2xl p-5 flex flex-col gap-2"
           >
-            <h3 className="text-xl md:text-2xl font-bold">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-white">
               {experience.title}
             </h3>
-            <p>{experience.company}</p>
-            <p className="opacity-80 text-sm">{experience.duration}</p>
+            <p className="text-sm text-blue-900 dark:text-blue-300 font-medium">
+              {experience.company}
+            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 opacity-80">
+              {experience.duration}
+            </p>
           </div>
         ))}
       </div>
