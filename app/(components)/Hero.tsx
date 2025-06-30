@@ -30,7 +30,7 @@ function Hero() {
         avatarUrl="/removedBG.png"
         showUserInfo={true}
         enableTilt={true}
-        onContactClick={() => console.log("Contact clicked")}
+        onContactClick={() => scrollToSection("contact-me")}
       />
       {/* Right Section - Text and Buttons */}
       <div
