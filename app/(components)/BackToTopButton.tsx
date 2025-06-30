@@ -27,7 +27,7 @@ function BackToTopButton() {
       <button
         data-aos={`${isVisible ? "fade-up" : "fade-down"}`}
         onClick={scrollToTop}
-        className="fixed bottom-10 right-10 px-5 py-2 bg-gray-100 shadow-lg rounded-2xl
+        className="!transition-all fixed bottom-10 right-10 px-5 py-2 bg-gray-100 shadow-lg rounded-2xl
       hover:shadow-xl text-2xl xl:text-5xl duration-300"
       >
         <FaArrowUp />
